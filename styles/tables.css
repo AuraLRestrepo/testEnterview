@@ -99,6 +99,7 @@
     border-radius: 0.5rem;
     color: var(--color--icons);
     font-weight: 500;
+    margin-right: 0.5rem;
 }
 
 .option_button.next {

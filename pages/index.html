@@ -23,17 +23,6 @@
         <div id="nav">
             <section class="title_nav"></section>
             <section class="body_nav">
-                <ul>
-                    <li></li>
-                    <li></li>
-                    <li></li>
-                    <li></li>
-                    <li></li>
-                    <li></li>
-                    <li></li>
-                    <li></li>
-                    <li></li>
-                </ul>
             </section>
         </div>
         <div class="container">
@@ -127,19 +116,21 @@
                                 </form>
                             </div>
                         </div>
-                        <table id="table_payments__container">
-                            <thead class="table_head">
-                                <tr>
-                                    <th class="columns_empty"></th>
-                                    <th>Status</th>
-                                    <th>Email</th>
-                                    <th>Amount</th>
-                                    <th class="columns_empty"></th>
-                                </tr>
-                            </thead>
-                            <tbody class="table_body">
-                            </tbody>
-                        </table>
+                        <div class="tables_content_data">
+                            <table id="table_payments__container">
+                                <thead class="table_head">
+                                    <tr>
+                                        <th class="columns_empty"></th>
+                                        <th>Status</th>
+                                        <th>Email</th>
+                                        <th>Amount</th>
+                                        <th class="columns_empty"></th>
+                                    </tr>
+                                </thead>
+                                <tbody class="table_body">
+                                </tbody>
+                            </table>
+                        </div>
                         <div class="table_options">
                             <div class="option_selected">
                                 <span class="selected_rows"></span>
@@ -164,6 +155,8 @@
     <script type="module" src="../js/lineChart.js"></script>
     <script type="module" src="../js/interpolationChart.js"></script>
     <script type="module" src="../js/main.js"></script>
+    <!-- function isEmpty data -->
+    <script src="../js/dataEmpty.js"></script>
 </body>
 
 </html>
