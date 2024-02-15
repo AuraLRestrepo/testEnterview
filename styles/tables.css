@@ -1,0 +1,113 @@
+.tables_payments {
+    width: 50%;
+    padding: 1rem 1.25rem 0 0.5rem;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.table_card {
+    width: 100%;
+    max-height: 660px;
+    background: var(--bg--cards);
+    box-shadow: var(--shadow--card);
+    border: 1px solid var(--border--card);
+    border-radius: 0.5rem;
+    padding: 1.5rem;
+}
+
+.table_options {
+    margin-top: 1.125rem;
+    margin-bottom: 0.75rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.search__filter {
+    border:1px solid var(--border--card);
+    border-radius: 0.5rem;
+    width: 450px;
+    padding: 0.5rem;
+}
+
+#select_table {
+    border:1px solid var(--border--card);    
+    border-radius: 0.5rem;
+    width: 200px;
+    padding: 0.5rem;
+}
+
+#table_payments__container {
+    width: 100%;
+    border-radius: 0.5rem;
+    border-collapse: collapse;
+    border: none;    
+    margin-top: 2rem; 
+}
+
+#table_payments__container th {
+    text-align: left;
+    padding: 8px;
+}
+
+#table_payments__container td {
+    padding: 8px;
+}
+
+#table_payments__container thead {
+    color: #ffffff;
+}
+
+#table_payments__container thead tr {
+    border-bottom: 3px solid var(--border--card);
+    background: var(--color-brand);
+}
+
+#table_payments__container tbody tr {
+    border-bottom: 1px solid var(--border--card);
+}
+
+#table_payments__container tbody tr:hover {
+    background-color: #f1f1f1;
+}
+
+#table_payments__container tr:nth-child(even) {
+    background: #F8F8F8;
+}
+
+.columns_empty {
+    width: 40px;
+}
+
+.form-control {
+    width: 1rem;
+    height: 1rem;
+    border-radius: 0.25rem;
+    border-color: var(--border--card);
+}
+
+.option_selected {
+    color: var(--color--icons);
+}
+
+.option_button {
+    width: 100px;
+    height: 38px;
+    border: 1px solid var(--border--card);
+    background-color: transparent;
+    border-radius: 0.5rem;
+    color: var(--color--icons);
+    font-weight: 500;
+}
+
+.option_button.next {
+    border: 1px solid #1d8d0e;
+    color: #1d8d0e;
+}
+
+.option_button.next:hover {
+    background-color: #1d8d0e;
+    color: var(--bg--cards);
+    border: 1px solid #1d8d0e;
+}

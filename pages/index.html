@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prueba técnica entrevista</title>
+
+    <!-- Link style  -->
+    <link rel="stylesheet" href="../styles/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
+
+    <!-- Icons library google material icons -->
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,300,0,-25" />
+
+</head>
+
+<body>
+    <div id="content_app">
+        <div id="nav">
+            <section class="title_nav"></section>
+            <section class="body_nav">
+                <ul>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                </ul>
+            </section>
+        </div>
+        <div class="container">
+            <header class="header__container">
+                <section class="search_mobile">
+                    <span class="material-symbols-outlined">
+                        menu
+                    </span>
+                </section>
+                <section class="section_search">
+                    <form onsubmit="event.preventDefault();" role="search" class="search-form">
+                        <input class="search__in" type="search" name="" id="" placeholder="Search...">
+                        <button type="submit" class="search-button">
+                            <span class="material-symbols-outlined">
+                                search
+                            </span>
+                        </button>
+                    </form>
+                </section>
+                <section class="section_profiler">
+                    <div class="icons_header">
+                        <span class="material-symbols-outlined">
+                            mail
+                        </span>
+                        <span class="material-symbols-outlined">
+                            notifications
+                        </span>
+                    </div>
+                    <div class="profiler__user">
+                        <span class="name_user">Aura Restrepo</span>
+                        <span class="circle_user">AR</span>
+                        <span class="icon_down">
+                            <span class="material-symbols-outlined">
+                                expand_more
+                            </span>
+                        </span>
+                    </div>
+                </section>
+            </header>
+
+            <!-- dashboard and table-->
+            <div class="content">
+                <section id="content_dashboard">
+                    <div class="dashboard">
+                        <!-- Total Revenue -->
+                        <div class="card_dashboard_num">
+                            <h4 class="card-titles revenue"></h4>
+                            <h2 class="card_num revenue"></h2>
+                            <span class="card-leyend revenue"></span>
+                            <div class="card-charts revenue">
+                                <canvas id="chart__revenue"></canvas>
+                            </div>
+                        </div>
+                        <!-- Subscriptors -->
+                        <section class="card_dashboard_num">
+                            <h4 class="card-titles subscriptors"></h4>
+                            <h2 class="card_num subscriptors"></h2>
+                            <span class="card-leyend subscriptors"></span>
+                            <div class="card-charts subscriptors">
+                                <canvas id="chart__subscriptors"></canvas>
+                            </div>
+                        </section>
+
+                    </div>
+                    <!-- Section Exercise minutes -->
+                    <section class="card_dashboard_minutes">
+                        <h4 class="card-titles minutes"></h4>
+                        <span class="card-leyend minutes"></span>
+                        <div class="card-charts minutes">
+                            <canvas id="chart__minutes"></canvas>
+                        </div>
+                    </section>
+                </section>
+                <section class="tables_payments">
+                    <div class="table_card">
+                        <div class="table_title">
+                            <h4 class="card-titles tables"></h4>
+                            <span class="card-leyend tables"></span>
+                            <div class="table_options">
+                                <form onsubmit="event.preventDefault();" role="search">
+                                    <input class="search__filter" type="search" name="" id=""
+                                        placeholder="Filter emails...">
+                                </form>
+                                <form>
+                                    <select name="" id="select_table">
+                                        <option value="">Columns</option>
+                                        <option value="status">Status</option>
+                                        <option value="email">Email</option>
+                                        <option value="amount">Amount</option>
+                                    </select>
+                                </form>
+                            </div>
+                        </div>
+                        <table id="table_payments__container">
+                            <thead class="table_head">
+                                <tr>
+                                    <th class="columns_empty"></th>
+                                    <th>Status</th>
+                                    <th>Email</th>
+                                    <th>Amount</th>
+                                    <th class="columns_empty"></th>
+                                </tr>
+                            </thead>
+                            <tbody class="table_body">
+                            </tbody>
+                        </table>
+                        <div class="table_options">
+                            <div class="option_selected">
+                                <span class="selected_rows"></span>
+                                of the
+                                <span class="length_rows"></span>
+                                row(s) seleted.
+                            </div>
+                            <div class="option_button_move">
+                                <button type="button" class="option_button prev">Previus</button>
+                                <button type="button" class="option_button next">Next</button>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </div>
+
+        </div>
+    </div>
+    <script src="../node_modules/chart.js/dist/chart.umd.js"></script>
+    <script type="module" src="../js/data.js"></script>
+    <script type="module" src="../js/barChart.js"></script>
+    <script type="module" src="../js/lineChart.js"></script>
+    <script type="module" src="../js/interpolationChart.js"></script>
+    <script type="module" src="../js/main.js"></script>
+</body>
+
+</html>

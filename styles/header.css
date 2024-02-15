@@ -1,0 +1,131 @@
+.container {
+    width: 100%;
+    background: var(--bg--page);
+}
+
+.search_mobile {
+    display: none;
+}
+
+.header__container {
+    width: 100%;
+    height: 3.75rem;
+    padding: 0.5rem 1.25rem;
+    background: var(--bg--cards);
+    display: flex;
+    flex-grow: 1;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.section_search {
+    display: flex;
+    align-items: center;
+}
+
+.search-form {
+    position: relative;
+    top: 1.125rem;
+    left: 10.75rem;
+    width: 350px;
+    height: 40px;
+    border-radius: 40px;
+    box-shadow: 0 6px 8px rgba(0, 0, 0, 0.15);
+    transform: translate(-50%, -50%);
+    background: #fff;
+    transition: all 0.3s ease;
+}
+
+.search-form.focus {
+    box-shadow: 0 3px 4px rgba(0, 0, 0, 0.15);
+}
+
+.search__in {
+    position: absolute;
+    top: 10px;
+    left: 38px;
+    font-size: 14px;
+    background: none;
+    color: #5a6674;
+    width: 195px;
+    height: 20px;
+    border: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    outline: none;
+}
+
+.search__in::-webkit-search-cancel-button {
+    -webkit-appearance: none;
+    appearance: none;
+}
+
+.search-button {
+    position: absolute;
+    top: 10px;
+    left: 15px;
+    height: 20px;
+    width: 20px;
+    padding: 0;
+    margin: 0;
+    border: none;
+    background: none;
+    outline: none !important;
+    cursor: pointer;
+}
+
+.search-button .material-symbols-outlined {
+    font-size: 20px;
+    color: var(--color--icons);
+}
+
+.section_profiler {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 290px;
+}
+
+.icons_header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+    width: 150px;
+}
+
+.icons_header .material-symbols-outlined,
+.icon_down .material-symbols-outlined {
+    color: var(--color--icons);
+    font-size: 24px;
+}
+
+.profiler__user {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 350px;
+}
+
+.profiler__user>.circle_user {
+    background: var(--color-brand);
+    border-radius: 50%;
+    border: 1px solid var(--color-brand);
+    padding: 0.5rem;
+    color: var(--bg--cards);
+    font-size: 14px;
+    font-weight: 500;
+}
+
+.profiler__user~span {
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+}
+
+.name_user{
+    color: var(--color--icons);
+    font-size: 0.875rem;
+    font-weight: 400;
+}

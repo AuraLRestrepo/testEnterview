@@ -1,0 +1,33 @@
+:root {
+    /* titles, txt, subtitles color */
+    --color--titles: #3B3B3B;
+    --color--txt: #5F5F5F;
+    --color--subtitles: #a8a8a8;
+
+    /* titles, txt, subtitles sizes */
+    --size--h1: 2.25rem;
+    --size--h2: 1.375rem;
+    --size--h3: 1.25rem;
+    --size--h4: 1.125rem;
+    --size--h5: 1rem;
+    --size--h6: 0.875rem;
+    --size-txt: 0.75rem;
+
+    /* titles, txt, subtitles weight */
+    --size--h2: 600;
+    --weight--hn: 500;
+    --weight--h1: bold;
+
+    /* backgroud pages */
+    --bg--page: #f0f0f0;
+
+    /* cards */
+    --bg--cards: #ffffff;
+    --shadow--card: 0px 0px 11px 0px #c5c5c5e5;
+    --border--card: #cacaca;
+
+    /* styles search */   
+    --color-brand: #318999;
+    --color--icons: #A9A9A9;
+    
+}

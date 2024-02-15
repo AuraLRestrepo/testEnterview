@@ -1,0 +1,16 @@
+#chart__revenue,
+#chart__subscriptors,
+#chart__minutes{
+    width: 100% !important;
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+}
+
+#chart__revenue,
+#chart__subscriptors {
+    max-height: 220px !important;
+}
+
+#chart__minutes{ 
+    max-height: 190px !important;
+}
