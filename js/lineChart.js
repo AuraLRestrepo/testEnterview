@@ -18,7 +18,7 @@
                 labels: data.map(row => row.month),
                 datasets: [
                     {
-                        label: 'Subscriptors',
+                        label: 'Total Revenue',
                         data: data.map(row => row.count)
                     }
                 ]
